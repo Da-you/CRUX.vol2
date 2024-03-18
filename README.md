@@ -1,16 +1,12 @@
 # 🧗‍♂️ CRUX 🧗‍♂️
-CRUX프로젝트 refactor
-
+CRUX프로젝트 리팩토링
 ### 클라이밍 유저들을 위한 모임, 정보 제공 커뮤니티 서비스입니다.
-
-<br>
 
 ## [CRUX로 클라이밍 시작하기]
 #### [ -> CRUX 취업으로 인한 2023.02.13 서비스 종료😎]
+#### [ -> 2024.03.18 ~  코드 리팩토링 시작]
 
 <img src= "https://user-images.githubusercontent.com/67731994/194262200-818f0c6f-dd12-4e8d-8423-dbf0e6c4c40e.png" width="700" height="530"/>
-
-<br>
 
 <br>
 
@@ -18,7 +14,7 @@ CRUX프로젝트 refactor
 
 <img src="https://user-images.githubusercontent.com/88928469/201088609-d9e8bafb-cb82-4c3d-aa5a-ec770e7fecb6.gif">
 
-<br />
+<br/>
 
 -----
 ## :rocket:팀원소개
