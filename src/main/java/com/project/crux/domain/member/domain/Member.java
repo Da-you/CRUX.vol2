@@ -37,20 +37,12 @@ public class Member extends BaseTimeEntity {
 
     @Column(unique = true)
     private Long kakaoId;
+
     @Column
     private String content;
 
     @Column
     private String imgUrl;
-
-    @OneToMany(mappedBy = "member", cascade = CascadeType.REMOVE)
-    private List<CrewMember> crewMemberList = new ArrayList<>();
-
-    @OneToMany(mappedBy = "member", cascade = CascadeType.REMOVE)
-    private List<LikeGym> likeGymList;
-
-    @OneToMany(mappedBy = "member", cascade = CascadeType.REMOVE)
-    private List<LikeCrew> likeCrewList;
 
     @Builder
     public Member(String email, String nickname, String password, String content, String imgUrl) {
@@ -59,6 +51,16 @@ public class Member extends BaseTimeEntity {
         this.password = password;
         this.content = content;
         this.imgUrl = imgUrl;
+    }
+    @Builder
+    public static Member signup(String email, String nickname, String password, String content, String imgUrl){
+        return Member.builder()
+                .email(email)
+                .nickname(nickname)
+                .password(password)
+                .content(content)
+                .imgUrl(imgUrl)
+                .build();
     }
 
     //카카오 서비스 생성자

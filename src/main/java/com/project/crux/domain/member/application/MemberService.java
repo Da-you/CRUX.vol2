@@ -35,20 +35,18 @@ public class MemberService {
 
     //일반회원가입
     @Transactional
-    public void signUpMember(SignupRequestDto signupRequestDto) {
-        if (checkNickname(signupRequestDto.getNickname())) {
+    public void signUpMember(SignupRequestDto request) {
+        if (checkNickname(request.getNickname())) {
             throw new CustomException(ErrorCode.DUPLICATE_NICKNAME);
         }
-        if (checkEmail(signupRequestDto.getEmail())) {
+        if (checkEmail(request.getEmail())) {
             throw new CustomException(ErrorCode.DUPLICATE_EMAIL);
         }
-        Member member = Member.builder()
-                .email(signupRequestDto.getEmail())
-                .nickname(signupRequestDto.getNickname())
-                .password(passwordEncoder.encode(signupRequestDto.getPassword()))
-                .content(signupRequestDto.getContent())
-                .imgUrl(DEFAULT_IMAGE_URL)
-                .build();
+        Member member = Member.signup(
+                request.getEmail(), request.getNickname(),
+                request.getPassword(), request.getContent(),
+                DEFAULT_IMAGE_URL);
+
         memberRepository.save(member);
     }
 

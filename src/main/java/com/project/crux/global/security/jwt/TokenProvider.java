@@ -15,11 +15,9 @@ import java.util.Date;
 @Component
 public class TokenProvider {
 
-    private static final String BEARER_PREFIX = "Bearer ";
     private final Key key;
-    private static final long ACCESS_TOKEN_EXPIRE_TIME = 1000 * 60 * 60 * 24;            // 1일
-//  private static final long ACCESS_TOKEN_EXPIRE_TIME = 1000 * 60 * 30;            // 30분
-//  private static final long ACCESS_TOKEN_EXPIRE_TIME = 1000 * 5;            // 5초
+
+    private static final long ACCESS_TOKEN_EXPIRE_TIME = 1000 * 60 * 30;            // 30분
 
 
     public TokenProvider(@Value("${jwt.secret}") String secretKey) {
@@ -27,7 +25,6 @@ public class TokenProvider {
         byte[] keyBytes = Decoders.BASE64.decode(secretKey);
         this.key = Keys.hmacShaKeyFor(keyBytes);
     }
-
 
     //Token 생성
     public String generateToken(Member member) {
