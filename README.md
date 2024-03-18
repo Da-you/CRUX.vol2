@@ -5,8 +5,8 @@ CRUX프로젝트 refactor
 
 <br>
 
-## [CRUX로 클라이밍 시작하기](https://youmadeit.shop/)
-#### [ -> CRUX 취업으로 인한 2023.02.13 서비스 종료😎](https://youmadeit.shop/)
+## [CRUX로 클라이밍 시작하기]
+#### [ -> CRUX 취업으로 인한 2023.02.13 서비스 종료😎]
 
 <img src= "https://user-images.githubusercontent.com/67731994/194262200-818f0c6f-dd12-4e8d-8423-dbf0e6c4c40e.png" width="700" height="530"/>
 
