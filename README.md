@@ -4,7 +4,7 @@ CRUX 프로젝트 리팩토링
 
 ## [CRUX로 클라이밍 시작하기]
 #### [ -> CRUX 취업으로 인한 2023.02.13 서비스 종료😎]
-#### [ -> 2024.03.18 ~  코드 리팩토링 시작]
+#### [ -> 코드 리팩토링 시작]
 
 <img src= "https://user-images.githubusercontent.com/67731994/194262200-818f0c6f-dd12-4e8d-8423-dbf0e6c4c40e.png" width="700" height="530"/>
 
@@ -18,13 +18,14 @@ CRUX 프로젝트 리팩토링
 
 -----
 ## :rocket:팀원소개
-|팀원|깃허브|역할분담|
-|-----|---|---|
-|조현우|[Github](https://github.com/jhw927)|Spring/BE|
-|채태림|[Github](https://github.com/ctr0812)|Spring/BE|
-|이민규|[Github](https://github.com/01192mg)|Spring/BE|
-|이용규|[Github](https://github.com/chipmunkcol)&nbsp;|React/FE|
-|임효림|[Github](https://github.com/hyolimlim)|React/FE|
+|팀원| 깃허브                                     | 역할분담      |
+|-----|-----------------------------------------|-----------|
+|조현우| [Github](https://github.com/jhw927)     | Spring/BE |
+|채태림| [Github](https://github.com/ctr0812)    | Spring/BE |
+|이민규| [Github](https://github.com/01192mg)    | Spring/BE |
+|이용규| [Github](https://github.com/chipmunkcol)| React/FE  |
+|임효림| [Github](https://github.com/hyolimlim)  | React/FE  |
+|임효림| [Github](X)                             | Designer  |
 
 
 <br>
